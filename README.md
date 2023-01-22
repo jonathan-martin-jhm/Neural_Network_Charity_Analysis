@@ -86,3 +86,4 @@ Loss: 0.5599883198738098, Accuracy: 0.7250145673751831
 
 
 ## Summary
+In the project, achieving a predictive accuracy of >75% was not acheived using a neural network model with 3 attempts at optimization. The best attempt only achieved a predictive accuracy of 72.6%. Further attempts could be made with the neural network model to reduce loss and increase accuracy by removing more columns that are likely causing overfitting reduce the number of epochs, and more layers could be added to improve the accuracy. Alternatively, I would recommend trying other machine learning models to improve the predictive accuracy. Since neural networks are prone to overfitting and are more difficult to train, as such a logistic regression model could be generated in an attempt to minimize the amount of trouble shooting involved with neural networks.
