@@ -52,11 +52,37 @@ From Alphabet Soup’s business team, Beks received a CSV containing more than 3
 
 * EIN and NAME — Identification columns
 
+
 ### Compling, Traning, and Evaluating the Model
+
 #### How many neurons, layers, and activation functions did you select for your neural network model, and why?
-  
+* The intial model contained three hidden layers. Hidden layer one, two, and three had 80, 30, and 1 neuron(s), respectively. The number of neurons, were chosen to approximately double the input layers and minimize overfitting. The activation function of the first two were chosen to be "relu" to restrict the outcomes from 0 to infinity and the final output layer was "sigmoid" to produce a binary predictive outcome. 
+
+
 #### Were you able to achieve the target model performance?
-  
+* No, the target model performance was to achieve a predictive accuracy >75%. The best model had a predictive accuracy of 72.6% and the initial model had a predictive accuracy of 72.5%. Minimal, if any, improvements were made to the model in the optimization attempts. 
+
+
 #### What steps did you take to try and increase model performance?
+* Initial Model
+
+Loss: 0.5554019212722778, Accuracy: 0.7252478003501892
+
+
+* Optimization Attempt 1: The USE_CASE column was removed because I deemed this to be a noisy column that would not influence the status of the loan approval process.
+
+Loss: 0.5604059100151062, Accuracy: 0.7261807322502136
+
+
+* Optimization Attempt 2: The neurons used in the hidden layers were doubled in an attempt to improve the predictive accuracy.
+
+Loss: 0.5660737156867981, Accuracy: 0.726064145565033
+
+
+* Optimization Attempt 3: An extra hidden layer with the "tanh" was added to expand the predicted outcomes to include negative values.
+
+Loss: 0.5599883198738098, Accuracy: 0.7250145673751831
+
+
 
 ## Summary
